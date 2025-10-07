@@ -1,8 +1,11 @@
 import VideoShowcase from "./ui/VideoShowcase"
 import RenownedDJs from "./ui/RenownedDJs"
+import Navbar from "../ui/home/Navbar"
 
 export default function ClassSessionsPage() {
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
@@ -23,5 +26,6 @@ export default function ClassSessionsPage() {
         <RenownedDJs />
       </div>
     </div>
+    </>
   )
 }

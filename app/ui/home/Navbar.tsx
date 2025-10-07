@@ -24,7 +24,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 shadow-lg">
+    <nav className="w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 shadow-lg pb-3 pt-3">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
         
         {/* Logo left */}
