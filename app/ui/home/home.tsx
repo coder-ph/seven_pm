@@ -178,6 +178,7 @@ export default function HomePage() {
       <div className="mt-16">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-4">Find Our DJ Academy</h2>
+          
         </div>
 
         {/* Map Container - Reduced height */}
@@ -193,8 +194,9 @@ export default function HomePage() {
           referrerPolicy="no-referrer-when-downgrade"
           title="Seven PM DJ Academy Location"
         ></iframe>
+        
       </div>
       </div>
     </div>
-  );
+  )
 }
