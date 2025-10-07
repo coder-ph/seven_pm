@@ -17,14 +17,14 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const links = [
-    { name: 'Homepage', href: '/Homepage', icon: HomeIcon },
+    { name: 'Homepage', href: '/', icon: HomeIcon },
     { name: 'Info', href: '/Info', icon: InformationCircleIcon },
-    { name: 'Contact us', href: '/contact', icon: PhoneArrowDownLeftIcon },
-    { name: 'Class sessions', href: '/class_session', icon: VideoCameraIcon },
+    { name: 'Contact us', href: '/', icon: PhoneArrowDownLeftIcon },
+    { name: 'Class sessions', href: '/class-sessions', icon: VideoCameraIcon },
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50 shadow-lg pb-3 pt-3">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
         
         {/* Logo left */}

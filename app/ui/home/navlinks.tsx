@@ -12,10 +12,10 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 const links = [
-  { name: 'Homepage', href: '/Homepage', icon: HomeIcon },
+  { name: 'Homepage', href: '/', icon: HomeIcon },
   { name: 'Info', href: '/Info', icon: InformationCircleIcon },
-  { name: 'Contact us', href: '/contact', icon: PhoneArrowDownLeftIcon },
-  { name: 'Class sessions', href: '/class_session', icon: VideoCameraIcon },
+  { name: 'Contact us', href: '/', icon: PhoneArrowDownLeftIcon },
+  { name: 'Class sessions', href: '/class-sessions', icon: VideoCameraIcon },
 ];
 
 export default function Navlinks() {
@@ -35,7 +35,7 @@ export default function Navlinks() {
                rounded-md text-sm font-medium text-white 
                hover:bg-sky-100 hover:text-blue-600 group transition-colors duration-200`,
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
+                ' text-blue-600': pathname === link.href,
               }
             )}
           >

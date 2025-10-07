@@ -33,7 +33,7 @@ export default function VideoShowcase() {
     <section className="mb-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-          Training <span className="text-blue-400">Videos</span>
+          Class <span className="text-blue-400">Videos</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
           Watch our expert instructors in action. Each video is designed to take 
