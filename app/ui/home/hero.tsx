@@ -70,7 +70,7 @@ export default function HeroSection() {
               Make Enquiry
             </button>
             <Link
-              href="/class_session"
+              href="/class-sessions"
               className="border-2 border-blue-300 text-blue-300 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-300 hover:text-slate-900 transform hover:scale-105 transition-all duration-300"
             >
               View Class Sessions
