@@ -1,31 +1,30 @@
-"use client"
+'use client'
 
 export default function VideoShowcase() {
-  // You'll replace these with your actual Vimeo video IDs
   const videos = [
     {
       id: "video1",
-      title: "Beginner Mixing Techniques",
-      description: "Learn the fundamentals of beat matching and transitions",
-      vimeoId: "YOUR_VIMEO_ID_1" // Replace with actual Vimeo ID
+      title: "",
+      description: "Watch our students in action during their learning session",
+      vimeoId: "1125122553"
     },
     {
       id: "video2", 
-      title: "Advanced Scratching Workshop",
-      description: "Master advanced scratching techniques with our instructors",
-      vimeoId: "YOUR_VIMEO_ID_2" // Replace with actual Vimeo ID
+      title: "",
+      description: "Students engaged in interactive classroom activities",
+      vimeoId: "1125118544"
     },
     {
       id: "video3",
-      title: "Music Theory for DJs",
-      description: "Understand music structure for better mixing decisions",
-      vimeoId: "YOUR_VIMEO_ID_3" // Replace with actual Vimeo ID
+      title: "",
+      description: "Learner enjoying their educational journey",
+      vimeoId: "1125118948"
     },
     {
       id: "video4",
-      title: "Live Performance Setup",
-      description: "Learn how to prepare for live performances and gigs",
-      vimeoId: "YOUR_VIMEO_ID_4" // Replace with actual Vimeo ID
+      title: "",
+      description: "Students participating in hands-on learning experiences",
+      vimeoId: "1125118853"
     }
   ]
 
@@ -36,49 +35,38 @@ export default function VideoShowcase() {
           Class <span className="text-blue-400">Videos</span>
         </h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Watch our expert instructors in action. Each video is designed to take 
-          your DJ skills to the next level.
+          Watch our students in action. Each video showcases the vibrant learning 
+          environment and engaging activities at our school.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {videos.map((video) => (
-          <div key={video.id} className="bg-slate-800/50 rounded-lg overflow-hidden border border-slate-700/50 backdrop-blur-sm">
-            {/* Video Player */}
-            <div className="aspect-video bg-slate-900">
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-900/20 to-purple-900/20">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <p className="text-white font-semibold">Vimeo Video</p>
-                  <p className="text-gray-400 text-sm mt-2">Replace with Vimeo embed</p>
-                </div>
-              </div>
-              {/* Replace the above div with actual Vimeo embed:
+          <div key={video.id} className="bg-slate-800/50 rounded-lg overflow-hidden border border-slate-700/50 backdrop-blur-sm hover:transform hover:scale-[1.02] transition-all duration-300 w-full max-w-md mx-auto">
+            {/* Video Player - Perfectly fitted */}
+            <div className="w-full aspect-video bg-slate-900">
               <iframe 
-                src={`https://player.vimeo.com/video/${video.vimeoId}`}
+                src={`https://player.vimeo.com/video/${video.vimeoId}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479`}
                 className="w-full h-full"
                 frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
+                title={video.title}
               ></iframe>
-              */}
             </div>
             
-            {/* Video Info */}
-            <div className="p-6">
+            {/* Video Info - Clean and simple */}
+            <div className="p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-2">{video.title}</h3>
-              <p className="text-gray-300 mb-4">{video.description}</p>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors duration-200">
-                Watch Full Video
-              </button>
+              <p className="text-gray-300">{video.description}</p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Vimeo Player Script - Only load once */}
+      <script src="https://player.vimeo.com/api/player.js" async></script>
     </section>
   )
 }
