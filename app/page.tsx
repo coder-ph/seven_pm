@@ -330,7 +330,7 @@ export default function Home() {
 
             {/* Form */}
             <form 
-              action="https://formsubmit.co/phelixmbani@gmail.com" 
+              action="https://formsubmit.co/sevenpmvibe@gmail.com" 
               method="POST"
               onSubmit={handleSubmit}
               className="p-6 space-y-4"
@@ -339,7 +339,7 @@ export default function Home() {
               <input type="hidden" name="_subject" value="New DJ Academy Enquiry" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+              {/* <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" /> */}
 
               {/* Name Field */}
               <div>

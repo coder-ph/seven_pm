@@ -33,7 +33,7 @@ export default function Navbar() {
             <Image
               src="/sevenpm1.png"
               alt="Seven PM DJ Academy"
-              width={100}
+              width={80}
               height={60}
               className="h-auto w-auto"
               style={{
